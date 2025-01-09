@@ -91,7 +91,7 @@
         function calculate() {
             const fixedPrice = parseFloat(document.getElementById('scooter').value); // Prix fixe selon scooter
             const km = parseFloat(document.getElementById('km').value) || 0; // Nombre de kilomètres
-            const variablePrice = km * 0.11; // Tarif variable par km
+            const variablePrice = km * 0.12; // Tarif variable par km
             const total = fixedPrice + variablePrice;
             document.getElementById('result').innerText = `Total: ${total.toFixed(2)} €`;
         }
